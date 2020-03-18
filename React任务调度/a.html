@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//       var judgeSquareSum = function(c) {
+//       let result,
+//       length = parseInt(Math.sqrt(c)),
+//       bool = false;
+      
+//       for(let i = 0;i <= length; i++){
+//           for(let j=length;j >= i;j --){ 
+//               if(c == j * j + i * i){
+//                 return true
+//               }
+//           }
+  
+//       }
+      
+//       return bool
+//   };
+
+//   var judgeSquareSum = function(c) {
+//       let result,
+//       length = parseInt(Math.sqrt(c)),
+//       bool = false;
+//       for(let i = 0;i <= length; i++){
+//         result = Math.sqrt(c - i * i)
+//         if(result % 1 == 0){
+//             return true
+//         }
+  
+//       }
+      
+//       return bool
+//   };
+
+
+//   var judgeSquareSum = function(c) {
+//       let result,
+//       length = parseInt(Math.sqrt(c)),
+//       j = length;
+//       bool = false;
+      
+//       for(let i = 0;i <= length; i++){
+//           if(c == i * i + j * j){
+//               return true
+//           }else{
+//               j -= 1
+//               if(j > i + 1){
+//                 return true
+//               }
+//           }
+  
+//       }
+      
+//       return bool
+//   };
+
+
+var judgeSquareSum = function(c) {
+      let result,
+      i=0,
+      length = parseInt(Math.sqrt(c)),
+      j = length,//4 
+      d,
+      bool = false;
+      
+      while(i<=j){
+        debugger
+          d= i*i + j*j
+          if(c==d){
+              return true;
+          }else if(d<c){
+              console.log(i)
+              i++;
+          }else{
+              j--;
+          }
+      }
+    }
+    judgeSquareSum(6)
+    </script>
+</body>
+</html>
